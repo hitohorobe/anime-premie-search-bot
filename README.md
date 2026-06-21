@@ -1,6 +1,6 @@
 # anime-premie-search-bot
 
-アニメの先行上映会・先行配信イベント情報を収集し、RSS / 静的サイト（GitHub Pages） / X / Bluesky / Google カレンダーへ配信するアグリゲーターです。
+アニメの先行上映会・先行配信イベント情報を収集し、RSS / 静的サイト（GitHub Pages） / X / Bluesky / Google カレンダーへ配信する自動収集・配信ツールです。
 
 - 情報源: アニメイトタイムズ（`src/aggregator/sources/animatetimes.py`、RSSが無いためスクレイピング + LLM抽出）
 - 実行: 2つのGitHub Actionsワークフローに分かれている
