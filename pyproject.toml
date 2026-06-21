@@ -1,0 +1,37 @@
+[project]
+name = "aggregator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "k.takeda", email = "hitohorobe@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.109.2",
+    "atproto>=0.0.68",
+    "beautifulsoup4>=4.15.0",
+    "feedgen>=1.0.0",
+    "google-api-python-client>=2.197.0",
+    "google-auth>=2.55.0",
+    "httpx>=0.28.1",
+    "jinja2>=3.1.6",
+    "lxml>=6.1.1",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "tweepy>=4.16.0",
+]
+
+[project.scripts]
+aggregator-run = "aggregator.cli:main"
+aggregator-publish-sns = "aggregator.cli:main_sns"
+
+[build-system]
+requires = ["uv_build>=0.11.21,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.0",
+    "pytest-mock>=3.15.1",
+]

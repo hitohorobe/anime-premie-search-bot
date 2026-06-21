@@ -1,0 +1,54 @@
+name: Publish to SNS
+
+on:
+  workflow_run:
+    workflows: ["Run aggregator"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aggregator-publish-sns
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      # No ref is pinned: by the time the "Run aggregator" workflow_run fires
+      # as completed, its own commit (data/events.json) has already been
+      # pushed, so the default branch HEAD is the right thing to check out.
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Publish to X/Bluesky
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: uv run aggregator-publish-sns
+
+      - name: Commit updated publish status
+        run: |
+          git config user.name "aggregator-bot"
+          git config user.email "aggregator-bot@users.noreply.github.com"
+          git add data/events.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update sns publish status [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi

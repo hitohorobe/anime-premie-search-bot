@@ -1,0 +1,251 @@
+{
+  "events": [
+    {
+      "id": "animatetimes-1781576343",
+      "title": "『片田舎のおっさん、剣聖になるII』第2期先行上映会イベント",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1781576343",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-06-16T18:26:10.837174Z",
+      "sessions": [
+        {
+          "location_label": "名古屋",
+          "venue_name": "ミッドランドスクエア シネマ",
+          "venue_address": null,
+          "starts_at": "2026-06-20T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "大阪",
+          "venue_name": "常翔ホール（ちゃやまち推しフェスティバル2026）",
+          "venue_address": null,
+          "starts_at": "2026-06-20T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "丸の内ピカデリー",
+          "venue_address": null,
+          "starts_at": "2026-06-28T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://l-tike.com/cinema/mevent/?mid=783146",
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "名古屋・大阪の正確な開始時刻が記事に記載されていない。大阪の詳細チケットURLは別途記載（https://ticket.anime-japan.jp/oshifes2026_ossankensei_fc/）。チケット販売状況は一般発売中とのこと。",
+        "raw_text_hash": "sha256:4b1af3f20e163743cfd3edce5c7434776fa9ca7f3ca4f4abc604dc419eda0488"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      }
+    },
+    {
+      "id": "animatetimes-1781925277",
+      "title": "『無職転生Ⅲ』第3・4話【ルーデウス青年期編】先行上映会",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1781925277",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-06-21T11:07:40.120497Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "TOHOシネマズ日比谷",
+          "venue_address": null,
+          "starts_at": "2026-07-11T18:45:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "TOHOシネマズ池袋",
+          "venue_address": null,
+          "starts_at": "2026-07-11T18:45:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "愛知",
+          "venue_name": "TOHOシネマズ名古屋栄",
+          "venue_address": null,
+          "starts_at": "2026-07-11T18:45:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "大阪",
+          "venue_name": "TOHOシネマズ梅田",
+          "venue_address": null,
+          "starts_at": "2026-07-11T18:45:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-06-20T13:15:00+09:00",
+        "presale_closes_at": "2026-06-24T23:59:00+09:00",
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://eplus.jp/mushokutensei",
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "TOHOシネマズ日比谷の舞台挨拶登壇時間が18:00、本編上映時間が18:45であるため、本編上映開始時刻をstarts_atとした。他3劇場のdoors_open_atは記事に明記されていない。",
+        "raw_text_hash": "sha256:4547596f1e5d430ecec44e0c3625ce60b4e185740de6d455e509d90447ecf024"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      }
+    },
+    {
+      "id": "animatetimes-1781767921",
+      "title": "『グロウアップショウ ～ひまわりのサーカス団～』先行上映会",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1781767921",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-06-21T11:07:44.854684Z",
+      "sessions": [
+        {
+          "location_label": "",
+          "venue_name": null,
+          "venue_address": null,
+          "starts_at": null,
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "記事は先行上映会の公式レポートであり、イベント自体は既に開催済みと考えられます。記事には上映会の具体的な開催日時、会場、チケット情報が記載されていません。",
+        "raw_text_hash": "sha256:e39fc35ef5583e6bd99c118c072cc3070598a30e73cfd8c1d7b0477a8984d0ba"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      }
+    },
+    {
+      "id": "animatetimes-1781662434",
+      "title": "劇場版アイカツスターズ！-Anniversary Stars-舞台挨拶",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1781662434",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-06-21T11:07:57.380975Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "新宿バルト9",
+          "venue_address": null,
+          "starts_at": "2026-07-04T10:35:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "新宿バルト9",
+          "venue_address": null,
+          "starts_at": "2026-07-04T13:25:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-06-17T11:00:00+09:00",
+        "presale_closes_at": "2026-06-28T23:59:00+09:00",
+        "general_opens_at": "2026-06-30T10:00:00+09:00",
+        "general_closes_at": "2026-07-03T16:00:00+09:00",
+        "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "舞台挨拶は2回実施され、1回目は上映終了後、2回目は上映開始前の実施となる。リバイバル上映期間は2026年7月3日より3週間限定だが、舞台挨拶は7月4日の新宿バルト9のみの実施。",
+        "raw_text_hash": "sha256:d895794490faae973443fa87682ee6b8e84695acbc95fea575ae3a7ca25a45b9"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      }
+    },
+    {
+      "id": "animatetimes-1781419264",
+      "title": "鬼の花嫁 第1話先行上映会",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1781419264",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-06-21T11:08:01.480946Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "新宿バルト9",
+          "venue_address": null,
+          "starts_at": "2026-06-29T18:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "新宿バルト9",
+          "venue_address": null,
+          "starts_at": "2026-06-29T19:30:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": "2026-06-21T23:59:00+09:00",
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://t.pia.jp/pia/event/event.do?eventBundleCd=b2668649",
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "",
+        "raw_text_hash": "sha256:691bba7149acceb75fb3a35435994d5dd4496b4cee49189248cb1499d0a9dd37"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      }
+    }
+  ],
+  "schema_version": 1
+}

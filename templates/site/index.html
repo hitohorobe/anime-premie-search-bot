@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<script type="application/json" id="events-data">{{ events_json | tojson }}</script>
+
+<noscript>
+  <p>一覧の表示にはJavaScriptが必要です。更新情報は<a href="feed.xml">RSSフィード</a>でも確認できます。</p>
+</noscript>
+
+<div class="filters">
+  <label>開催日 from <input type="date" id="filter-from"></label>
+  <label>to <input type="date" id="filter-to"></label>
+  <button type="button" id="filter-apply">絞り込む</button>
+  <button type="button" id="filter-clear">クリア</button>
+</div>
+
+<div id="events-list"></div>
+<div id="pagination"></div>
+
+<script src="site.js"></script>
+{% endblock %}
