@@ -46,6 +46,7 @@ class _ExtractedReservation(BaseModel):
 class _ExtractedEvent(BaseModel):
     title: str
     is_screening_event: bool
+    is_report: bool
     sessions: list[_ExtractedSession]
     reservation: _ExtractedReservation
     confidence_notes: str
@@ -133,6 +134,7 @@ def extract_event(
         fetched_at=datetime.now(timezone.utc),
         sessions=sessions,
         reservation=ReservationWindow(**extracted.reservation.model_dump()),
+        is_report=extracted.is_report,
         extraction=ExtractionMeta(
             model=model,
             confidence_notes=extracted.confidence_notes,
