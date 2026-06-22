@@ -52,7 +52,8 @@
         "twitter": false,
         "bluesky": false,
         "gcal_event_ids": {}
-      }
+      },
+      "is_report": false
     },
     {
       "id": "animatetimes-1781925277",
@@ -101,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": null
+        "checked_at": "2026-06-22T05:52:04.091190Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -114,7 +115,8 @@
         "twitter": false,
         "bluesky": false,
         "gcal_event_ids": {}
-      }
+      },
+      "is_report": false
     },
     {
       "id": "animatetimes-1781767921",
@@ -152,7 +154,8 @@
         "twitter": false,
         "bluesky": false,
         "gcal_event_ids": {}
-      }
+      },
+      "is_report": false
     },
     {
       "id": "animatetimes-1781662434",
@@ -179,13 +182,13 @@
         }
       ],
       "reservation": {
-        "presale_opens_at": "2026-06-17T11:00:00+09:00",
+        "presale_opens_at": "2026-06-28T00:00:00+09:00",
         "presale_closes_at": "2026-06-28T23:59:00+09:00",
         "general_opens_at": "2026-06-30T10:00:00+09:00",
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
-        "availability_status": null,
-        "checked_at": null
+        "availability_status": "not_yet_open",
+        "checked_at": "2026-06-22T05:52:12.667338Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -198,7 +201,8 @@
         "twitter": false,
         "bluesky": false,
         "gcal_event_ids": {}
-      }
+      },
+      "is_report": false
     },
     {
       "id": "animatetimes-1781419264",
@@ -225,13 +229,13 @@
         }
       ],
       "reservation": {
-        "presale_opens_at": null,
+        "presale_opens_at": "2026-06-22T18:00:00+09:00",
         "presale_closes_at": "2026-06-21T23:59:00+09:00",
-        "general_opens_at": null,
+        "general_opens_at": "2026-06-23T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/event/event.do?eventBundleCd=b2668649",
-        "availability_status": null,
-        "checked_at": null
+        "availability_status": "not_yet_open",
+        "checked_at": "2026-06-22T05:52:23.212465Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -244,7 +248,55 @@
         "twitter": false,
         "bluesky": false,
         "gcal_event_ids": {}
-      }
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1780282305",
+      "title": "映画『超かぐや姫！』卒業記念舞台挨拶",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1780282305",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-06-22T05:51:32.687170Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "チネチッタ",
+          "venue_address": null,
+          "starts_at": null,
+          "doors_open_at": "2026-06-19T17:30:00+09:00",
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "シネマシティ",
+          "venue_address": null,
+          "starts_at": null,
+          "doors_open_at": "2026-06-19T18:20:00+09:00",
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-06-05T21:00:00+09:00",
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "劇場上映終了日が6月18日であり、舞台挨拶が翌19日であることから2026年と推測。チケット販売開始日時は記事に「6月5日（金）21時より販売開始」と明記されている。両劇場の正確な住所は記事に記載されていない。シネマシティでの舞台挨拶は上映終了後であるが、具体的な終了時刻は記載されていない。",
+        "raw_text_hash": "sha256:8140b6c27e4b6c9b1852f07889ece9a88714333506f2c159db183d1bdf8ba28b"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
     }
   ],
   "schema_version": 1
