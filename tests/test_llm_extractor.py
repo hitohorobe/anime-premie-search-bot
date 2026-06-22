@@ -32,6 +32,7 @@ def _extraction_payload(**overrides) -> dict:
     payload = {
         "title": "テストアニメ 第13話先行上映会",
         "is_screening_event": True,
+        "is_report": False,
         "sessions": [
             {
                 "location_label": "東京",
@@ -83,6 +84,16 @@ def test_extract_event_returns_none_when_not_a_screening_event():
     event = extract_event(_article(), client=client, model="claude-haiku-4-5")
 
     assert event is None
+
+
+def test_extract_event_marks_report_articles_as_concluded():
+    client = _client_returning(_extraction_payload(is_report=True))
+
+    event = extract_event(_article(), client=client, model="claude-haiku-4-5")
+
+    assert event is not None
+    assert event.is_report is True
+    assert event.is_concluded() is True  # true regardless of the (future) session date above
 
 
 def test_extract_event_returns_none_on_refusal():

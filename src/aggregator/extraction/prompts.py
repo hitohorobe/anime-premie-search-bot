@@ -7,6 +7,8 @@ SYSTEM_PROMPT = (
     "年が明記されていない場合は記事の文脈から妥当な年を推測し、どうしても判断できない場合はnullにしてください。"
     "複数の会場・複数の回がある場合はsessionsに複数要素を入れてください。"
     "情報が存在しない項目はnullにしてください。"
+    "記事がイベント開催前の告知・予告ではなく、開催後の様子を報告するレポート記事である場合はis_reportをtrueにしてください。"
+    "「開催されました」「大盛況のうちに終了」「〜の様子をお届け」など、イベントが既に行われたことを示す内容であればレポート記事です。"
 )
 
 EVENT_JSON_SCHEMA = {
@@ -16,6 +18,13 @@ EVENT_JSON_SCHEMA = {
         "is_screening_event": {
             "type": "boolean",
             "description": "この記事が先行上映会・先行配信・舞台挨拶付き上映会などのイベント告知/レポートであるか",
+        },
+        "is_report": {
+            "type": "boolean",
+            "description": (
+                "イベント開催後に書かれたレポート記事（開催の様子を報告する記事）であればtrue。"
+                "開催前の告知・予告記事であればfalse。"
+            ),
         },
         "sessions": {
             "type": "array",
@@ -56,7 +65,7 @@ EVENT_JSON_SCHEMA = {
             "description": "抽出時に不確実だった点があれば短く記載。なければ空文字",
         },
     },
-    "required": ["title", "is_screening_event", "sessions", "reservation", "confidence_notes"],
+    "required": ["title", "is_screening_event", "is_report", "sessions", "reservation", "confidence_notes"],
     "additionalProperties": False,
 }
 
@@ -90,8 +99,10 @@ RESERVATION_JSON_SCHEMA = {
         "general_opens_at": {"type": ["string", "null"], "description": "ISO 8601"},
         "general_closes_at": {"type": ["string", "null"], "description": "ISO 8601"},
         "availability_status": {
-            "type": ["string", "null"],
-            "enum": ["available", "not_yet_open", "closed", "sold_out", None],
+            "anyOf": [
+                {"type": "string", "enum": ["available", "not_yet_open", "closed", "sold_out"]},
+                {"type": "null"},
+            ],
             "description": "現在の予約受付状況",
         },
         "confidence_notes": {

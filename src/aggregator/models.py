@@ -68,15 +68,22 @@ class Event(BaseModel):
     reservation: ReservationWindow = Field(default_factory=ReservationWindow)
     extraction: ExtractionMeta
     publish_status: PublishStatus = Field(default_factory=PublishStatus)
+    # True when the source article is a post-event report rather than a
+    # pre-event announcement. Report articles often lack session dates
+    # entirely, so session-based is_concluded() can't detect them on its own.
+    is_report: bool = False
 
     def is_concluded(self, now: datetime | None = None) -> bool:
-        """Whether every session of this event is already in the past.
+        """Whether this event is already over and no longer upcoming.
 
-        Used to drop coverage of events that have already happened by the
-        time they're scraped — we only care about upcoming screenings.
-        Events with no extracted sessions are kept (we don't have enough
-        information to say they're over).
+        Report articles are always treated as concluded, regardless of
+        session info. Otherwise, used to drop coverage of events that have
+        already happened by the time they're scraped — we only care about
+        upcoming screenings. Events with no extracted sessions are kept
+        (we don't have enough information to say they're over).
         """
+        if self.is_report:
+            return True
         now = now or datetime.now(timezone.utc)
         if not self.sessions:
             return False
