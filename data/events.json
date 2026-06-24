@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-06-24T09:08:04.674657Z"
+        "checked_at": "2026-06-24T11:04:13.262371Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -187,8 +187,8 @@
         "general_opens_at": "2026-06-30T10:00:00+09:00",
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
-        "availability_status": "not_yet_open",
-        "checked_at": "2026-06-24T09:08:09.478862Z"
+        "availability_status": "available",
+        "checked_at": "2026-06-24T11:04:18.052173Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -235,7 +235,7 @@
         "general_closes_at": "2026-06-28T16:00:00+09:00",
         "ticket_url": "https://t.pia.jp/pia/event/event.do?eventBundleCd=b2668649",
         "availability_status": "sold_out",
-        "checked_at": "2026-06-24T09:08:12.172592Z"
+        "checked_at": "2026-06-24T11:04:22.562866Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -288,6 +288,53 @@
         "model": "claude-haiku-4-5",
         "confidence_notes": "劇場上映終了日が6月18日であり、舞台挨拶が翌19日であることから2026年と推測。チケット販売開始日時は記事に「6月5日（金）21時より販売開始」と明記されている。両劇場の正確な住所は記事に記載されていない。シネマシティでの舞台挨拶は上映終了後であるが、具体的な終了時刻は記載されていない。",
         "raw_text_hash": "sha256:8140b6c27e4b6c9b1852f07889ece9a88714333506f2c159db183d1bdf8ba28b"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1782284501",
+      "title": "『劇場版 仮面ライダーアギト PROJECT G4』福岡舞台挨拶付き上映会",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1782284501",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-06-24T11:02:41.127960Z",
+      "sessions": [
+        {
+          "location_label": "福岡",
+          "venue_name": "T・ジョイ博多",
+          "venue_address": null,
+          "starts_at": "2026-07-11T16:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "福岡",
+          "venue_name": "T・ジョイ博多",
+          "venue_address": null,
+          "starts_at": "2026-07-11T18:10:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-06-24T18:00:00+09:00",
+        "presale_closes_at": "2026-06-28T23:59:00+09:00",
+        "general_opens_at": "2026-07-04T16:00:00+09:00",
+        "general_closes_at": null,
+        "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
+        "availability_status": null,
+        "checked_at": "2026-06-24T11:04:26.036177Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "会場住所はT・ジョイ博多の正確な住所が記事に記載されていないため不確実。先行抽選販売の結果発表は7月1日だが、チケット完売日時は明記されていない。",
+        "raw_text_hash": "sha256:afb013172ef0e9ba007133963587a2a4f7f8a5075d32435936816c07345b7ed1"
       },
       "publish_status": {
         "rss": true,
