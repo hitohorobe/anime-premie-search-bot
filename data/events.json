@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-06-25T03:08:10.061013Z"
+        "checked_at": "2026-06-25T05:23:28.707627Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -188,7 +188,7 @@
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-06-25T03:08:15.262082Z"
+        "checked_at": "2026-06-25T05:23:32.294215Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -235,7 +235,7 @@
         "general_closes_at": "2026-06-28T16:00:00+09:00",
         "ticket_url": "https://t.pia.jp/pia/event/event.do?eventBundleCd=b2668649",
         "availability_status": "sold_out",
-        "checked_at": "2026-06-25T03:08:18.283589Z"
+        "checked_at": "2026-06-25T05:23:35.279419Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -329,12 +329,59 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-06-25T03:08:22.966796Z"
+        "checked_at": "2026-06-25T05:23:38.544800Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
         "confidence_notes": "会場住所はT・ジョイ博多の正確な住所が記事に記載されていないため不確実。先行抽選販売の結果発表は7月1日だが、チケット完売日時は明記されていない。",
         "raw_text_hash": "sha256:afb013172ef0e9ba007133963587a2a4f7f8a5075d32435936816c07345b7ed1"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1782281721",
+      "title": "『サイボーグ009 ネメシス』先行上映会",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1782281721",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-06-25T05:21:58.336534Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "新宿バルト9",
+          "venue_address": null,
+          "starts_at": "2026-07-18T16:10:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "新宿バルト9",
+          "venue_address": null,
+          "starts_at": "2026-07-18T18:50:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-06-27T10:00:00+09:00",
+        "presale_closes_at": "2026-07-09T23:59:00+09:00",
+        "general_opens_at": "2026-07-14T00:00:00+09:00",
+        "general_closes_at": null,
+        "ticket_url": "https://t.pia.jp/",
+        "availability_status": null,
+        "checked_at": "2026-06-25T05:23:41.580950Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "第2回の上映前舞台挨拶の開始時刻は記事に明記されていない。劇場窓口販売の終了時刻は記載なし。",
+        "raw_text_hash": "sha256:783e29ac42e058b4cd9ceeebd0f4114921d0fd26a6fb10cecb268f213d9d8f70"
       },
       "publish_status": {
         "rss": true,
