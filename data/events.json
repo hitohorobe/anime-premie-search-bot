@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-06-28T14:36:19.853026Z"
+        "checked_at": "2026-06-28T16:28:12.153436Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -182,13 +182,13 @@
         }
       ],
       "reservation": {
-        "presale_opens_at": "2026-06-28T00:00:00+09:00",
+        "presale_opens_at": "2026-06-29T18:00:00+09:00",
         "presale_closes_at": "2026-06-28T23:59:00+09:00",
         "general_opens_at": "2026-06-30T10:00:00+09:00",
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-06-28T14:36:24.358250Z"
+        "checked_at": "2026-06-28T16:28:16.672680Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -234,8 +234,8 @@
         "general_opens_at": "2026-06-29T00:00:00+09:00",
         "general_closes_at": "2026-06-29T00:00:00+09:00",
         "ticket_url": "https://t.pia.jp/pia/event/event.do?eventBundleCd=b2668649",
-        "availability_status": "sold_out",
-        "checked_at": "2026-06-28T14:36:26.890539Z"
+        "availability_status": "closed",
+        "checked_at": "2026-06-28T16:28:19.327934Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -328,8 +328,8 @@
         "general_opens_at": "2026-05-17T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
-        "availability_status": "not_yet_open",
-        "checked_at": "2026-06-28T14:36:32.777152Z"
+        "availability_status": "available",
+        "checked_at": "2026-06-28T16:28:23.529785Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-06-28T14:36:36.377634Z"
+        "checked_at": "2026-06-28T16:28:26.779225Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
