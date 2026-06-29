@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-06-29T07:43:21.769499Z"
+        "checked_at": "2026-06-29T09:37:30.626012Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -183,12 +183,12 @@
       ],
       "reservation": {
         "presale_opens_at": "2026-06-29T18:00:00+09:00",
-        "presale_closes_at": "2026-06-28T23:59:00+09:00",
+        "presale_closes_at": "2026-07-04T00:00:00+09:00",
         "general_opens_at": "2026-06-30T10:00:00+09:00",
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-06-29T07:43:26.608698Z"
+        "checked_at": "2026-06-29T09:37:36.679480Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -235,7 +235,7 @@
         "general_closes_at": "2026-06-29T00:00:00+09:00",
         "ticket_url": "https://t.pia.jp/pia/event/event.do?eventBundleCd=b2668649",
         "availability_status": "closed",
-        "checked_at": "2026-06-29T07:43:29.193319Z"
+        "checked_at": "2026-06-29T09:37:38.929708Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -328,8 +328,8 @@
         "general_opens_at": "2026-05-17T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
-        "availability_status": "available",
-        "checked_at": "2026-06-29T07:43:32.577012Z"
+        "availability_status": "not_yet_open",
+        "checked_at": "2026-06-29T09:37:43.243463Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-06-29T07:43:36.015091Z"
+        "checked_at": "2026-06-29T09:37:47.348333Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
