@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-06-30T12:42:06.020211Z"
+        "checked_at": "2026-06-30T14:53:50.003696Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -188,7 +188,7 @@
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
         "availability_status": "closed",
-        "checked_at": "2026-06-30T12:42:11.566821Z"
+        "checked_at": "2026-06-30T14:53:53.891990Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -328,8 +328,8 @@
         "general_opens_at": "2026-05-17T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
-        "availability_status": "not_yet_open",
-        "checked_at": "2026-06-30T12:42:15.450257Z"
+        "availability_status": "available",
+        "checked_at": "2026-06-30T14:53:59.854433Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-06-30T12:42:19.076587Z"
+        "checked_at": "2026-06-30T14:54:03.718486Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
