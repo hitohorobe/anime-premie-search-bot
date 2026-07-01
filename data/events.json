@@ -188,7 +188,7 @@
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
         "availability_status": "closed",
-        "checked_at": "2026-07-01T18:40:22.565640Z"
+        "checked_at": "2026-07-01T20:36:31.763500Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -329,7 +329,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
         "availability_status": "available",
-        "checked_at": "2026-07-01T18:40:26.877038Z"
+        "checked_at": "2026-07-01T20:36:35.636125Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-01T18:40:30.176993Z"
+        "checked_at": "2026-07-01T20:36:38.620451Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
