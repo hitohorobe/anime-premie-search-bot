@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-07-02T00:41:06.368667Z"
+        "checked_at": "2026-07-02T05:55:17.767754Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -188,7 +188,7 @@
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
         "availability_status": "closed",
-        "checked_at": "2026-07-02T00:41:10.604789Z"
+        "checked_at": "2026-07-02T05:55:22.044019Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -329,7 +329,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
         "availability_status": "available",
-        "checked_at": "2026-07-02T00:41:14.055594Z"
+        "checked_at": "2026-07-02T05:55:28.887348Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,12 +376,59 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-02T00:41:17.425633Z"
+        "checked_at": "2026-07-02T05:55:32.696549Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
         "confidence_notes": "第2回の上映前舞台挨拶の開始時刻は記事に明記されていない。劇場窓口販売の終了時刻は記載なし。",
         "raw_text_hash": "sha256:783e29ac42e058b4cd9ceeebd0f4114921d0fd26a6fb10cecb268f213d9d8f70"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1782953162",
+      "title": "『君と花火と約束と』初日舞台挨拶",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1782953162",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-02T05:54:31.350081Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "新宿ピカデリー",
+          "venue_address": "東京都新宿区新宿3丁目15番15号",
+          "starts_at": "2026-07-17T15:40:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "新宿ピカデリー",
+          "venue_address": "東京都新宿区新宿3丁目15番15号",
+          "starts_at": "2026-07-17T18:55:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-07-06T11:00:00+09:00",
+        "presale_closes_at": "2026-07-09T23:59:00+09:00",
+        "general_opens_at": "2026-07-14T10:00:00+09:00",
+        "general_closes_at": null,
+        "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
+        "availability_status": "not_yet_open",
+        "checked_at": "2026-07-02T05:55:36.834467Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "舞台挨拶は公開初日の上映時間帯での開催。15:40の回は上映後、18:55の回は上映前の舞台挨拶。チケット販売開始日時は記事に記載されていない。",
+        "raw_text_hash": "sha256:ce1af88a8c840875737c71b2b197791283e13675e3efedd2639d172c9fcb5e0e"
       },
       "publish_status": {
         "rss": true,
