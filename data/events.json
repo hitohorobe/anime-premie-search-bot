@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-07-04T02:25:09.607477Z"
+        "checked_at": "2026-07-04T06:43:57.527939Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -329,7 +329,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
         "availability_status": "available",
-        "checked_at": "2026-07-04T02:25:19.170403Z"
+        "checked_at": "2026-07-04T06:44:01.399728Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-04T02:25:22.078559Z"
+        "checked_at": "2026-07-04T06:44:05.579136Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -423,12 +423,42 @@
         "general_closes_at": null,
         "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-04T02:25:26.594105Z"
+        "checked_at": "2026-07-04T06:44:09.788715Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
         "confidence_notes": "舞台挨拶は公開初日の上映時間帯での開催。15:40の回は上映後、18:55の回は上映前の舞台挨拶。チケット販売開始日時は記事に記載されていない。",
         "raw_text_hash": "sha256:ce1af88a8c840875737c71b2b197791283e13675e3efedd2639d172c9fcb5e0e"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1783141766",
+      "title": "『スティール・ボール・ラン ジョジョの奇妙な冒険』2nd & 3rd STAGE Netflix先行配信",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1783141766",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-04T06:43:14.388021Z",
+      "sessions": [],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": "2026-09-25T00:00:00+09:00",
+        "general_closes_at": null,
+        "ticket_url": "https://www.netflix.com/title/82116553",
+        "availability_status": null,
+        "checked_at": "2026-07-04T06:44:12.364367Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "イベント会場や上映会場の情報は記事に含まれていない。配信開始日は明記されているが、終了日時は記載されていない。",
+        "raw_text_hash": "sha256:61df542464ed767f028804087a3b8ea84205ca4304a23147eaf32dfe8e5bafff"
       },
       "publish_status": {
         "rss": true,
