@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-07-03T22:58:18.607465Z"
+        "checked_at": "2026-07-04T02:25:09.607477Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -188,7 +188,7 @@
         "general_closes_at": "2026-07-03T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/aikatsu-anniversary-stars/",
         "availability_status": "closed",
-        "checked_at": "2026-07-03T22:58:23.145517Z"
+        "checked_at": "2026-07-04T02:25:16.464804Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -329,7 +329,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
         "availability_status": "available",
-        "checked_at": "2026-07-03T22:58:26.498518Z"
+        "checked_at": "2026-07-04T02:25:19.170403Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-03T22:58:29.120750Z"
+        "checked_at": "2026-07-04T02:25:22.078559Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -423,7 +423,7 @@
         "general_closes_at": null,
         "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-03T22:58:33.430551Z"
+        "checked_at": "2026-07-04T02:25:26.594105Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
