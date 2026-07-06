@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-07-06T16:50:51.084726Z"
+        "checked_at": "2026-07-06T19:49:09.580484Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -329,7 +329,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
         "availability_status": "available",
-        "checked_at": "2026-07-06T16:50:55.444031Z"
+        "checked_at": "2026-07-06T19:49:13.427998Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-06T16:50:58.063766Z"
+        "checked_at": "2026-07-06T19:49:15.545430Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-06T16:51:08.180789Z"
+        "checked_at": "2026-07-06T19:49:20.301070Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
