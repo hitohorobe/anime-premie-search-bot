@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-07-07T19:48:03.652525Z"
+        "checked_at": "2026-07-07T21:19:30.075820Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -328,8 +328,8 @@
         "general_opens_at": "2026-05-17T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
-        "availability_status": "not_yet_open",
-        "checked_at": "2026-07-07T19:48:07.187975Z"
+        "availability_status": "available",
+        "checked_at": "2026-07-07T21:19:34.172808Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-07T19:48:12.542903Z"
+        "checked_at": "2026-07-07T21:19:37.126853Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -417,13 +417,13 @@
         }
       ],
       "reservation": {
-        "presale_opens_at": "2026-07-09T00:00:00+09:00",
+        "presale_opens_at": "2026-07-09T23:59:00+09:00",
         "presale_closes_at": "2026-07-09T23:59:00+09:00",
         "general_opens_at": "2026-07-14T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
-        "availability_status": "not_yet_open",
-        "checked_at": "2026-07-07T19:48:17.140954Z"
+        "availability_status": "available",
+        "checked_at": "2026-07-07T21:19:41.990640Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-07T17:56:15.332017Z"
+        "checked_at": "2026-07-07T21:19:45.551208Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
