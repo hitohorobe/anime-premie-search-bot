@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-07-08T06:24:52.089025Z"
+        "checked_at": "2026-07-08T10:12:50.161775Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -328,8 +328,8 @@
         "general_opens_at": "2026-05-17T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
-        "availability_status": "not_yet_open",
-        "checked_at": "2026-07-08T06:24:56.557958Z"
+        "availability_status": "available",
+        "checked_at": "2026-07-08T10:12:55.563773Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-08T06:25:00.001539Z"
+        "checked_at": "2026-07-08T10:12:58.681896Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -422,8 +422,8 @@
         "general_opens_at": "2026-07-14T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
-        "availability_status": "available",
-        "checked_at": "2026-07-08T06:25:03.604079Z"
+        "availability_status": "not_yet_open",
+        "checked_at": "2026-07-08T10:13:02.449006Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -453,12 +453,75 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-08T06:25:07.111536Z"
+        "checked_at": "2026-07-08T10:13:06.822601Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
         "confidence_notes": "イベント会場や上映会場の情報は記事に含まれていない。配信開始日は明記されているが、終了日時は記載されていない。",
         "raw_text_hash": "sha256:61df542464ed767f028804087a3b8ea84205ca4304a23147eaf32dfe8e5bafff"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1783492462",
+      "title": "『無職転生Ⅲ』第3・4話先行上映会",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1783492462",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-08T10:11:52.490345Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "TOHOシネマズ日比谷",
+          "venue_address": null,
+          "starts_at": "2026-07-11T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "TOHOシネマズ池袋",
+          "venue_address": null,
+          "starts_at": "2026-07-11T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "愛知",
+          "venue_name": "TOHOシネマズ名古屋栄",
+          "venue_address": null,
+          "starts_at": "2026-07-11T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "大阪",
+          "venue_name": "TOHOシネマズ梅田",
+          "venue_address": null,
+          "starts_at": "2026-07-11T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "開始時刻の詳細時間が記載されていないため00:00として記載。日比谷は舞台挨拶付きのため既に完売、他劇場はチケット発売中との情報のみで販売時間は記載されていない。",
+        "raw_text_hash": "sha256:1d3d7b4329c4e8930769409c724e5e890e0393b23aee0871647acee9da807f82"
       },
       "publish_status": {
         "rss": true,
