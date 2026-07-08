@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-07-07T22:57:12.747383Z"
+        "checked_at": "2026-07-08T02:08:30.026895Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -328,8 +328,8 @@
         "general_opens_at": "2026-05-17T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
-        "availability_status": "not_yet_open",
-        "checked_at": "2026-07-07T22:57:17.782901Z"
+        "availability_status": "available",
+        "checked_at": "2026-07-08T02:08:36.528073Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-07T22:57:22.619466Z"
+        "checked_at": "2026-07-08T02:08:39.687909Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -417,13 +417,13 @@
         }
       ],
       "reservation": {
-        "presale_opens_at": "2026-07-09T00:00:00+09:00",
+        "presale_opens_at": "2026-07-09T23:59:00+09:00",
         "presale_closes_at": "2026-07-09T23:59:00+09:00",
         "general_opens_at": "2026-07-14T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
         "availability_status": "available",
-        "checked_at": "2026-07-07T22:57:26.987457Z"
+        "checked_at": "2026-07-08T02:08:43.646372Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-07T22:57:30.120041Z"
+        "checked_at": "2026-07-08T02:08:46.610951Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
