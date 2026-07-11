@@ -102,7 +102,7 @@
         "general_closes_at": null,
         "ticket_url": "https://eplus.jp/mushokutensei",
         "availability_status": null,
-        "checked_at": "2026-07-11T02:06:23.716449Z"
+        "checked_at": "2026-07-11T06:09:45.758091Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -328,8 +328,8 @@
         "general_opens_at": "2026-05-17T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/pia/events/shinagitoten/",
-        "availability_status": "available",
-        "checked_at": "2026-07-11T02:06:28.348831Z"
+        "availability_status": "not_yet_open",
+        "checked_at": "2026-07-11T06:09:50.199693Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-11T02:06:31.359239Z"
+        "checked_at": "2026-07-11T06:09:53.091766Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -423,7 +423,7 @@
         "general_closes_at": null,
         "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-11T02:06:35.372554Z"
+        "checked_at": "2026-07-11T06:09:57.689298Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-11T02:06:37.881472Z"
+        "checked_at": "2026-07-11T06:10:01.955899Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
