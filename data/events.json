@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-14T07:54:05.527752Z"
+        "checked_at": "2026-07-14T09:53:15.076584Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -422,8 +422,8 @@
         "general_opens_at": "2026-07-17T10:00:00+09:00",
         "general_closes_at": null,
         "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
-        "availability_status": "closed",
-        "checked_at": "2026-07-14T07:54:09.150273Z"
+        "availability_status": "sold_out",
+        "checked_at": "2026-07-14T09:53:19.607462Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-14T07:54:12.336575Z"
+        "checked_at": "2026-07-14T09:53:23.070360Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
