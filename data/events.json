@@ -376,7 +376,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t.pia.jp/",
         "availability_status": null,
-        "checked_at": "2026-07-16T06:13:48.396073Z"
+        "checked_at": "2026-07-16T10:04:02.675443Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -423,7 +423,7 @@
         "general_closes_at": null,
         "ticket_url": "https://w.pia.jp/t/kimi-hana-movie/",
         "availability_status": "closed",
-        "checked_at": "2026-07-16T06:13:52.594830Z"
+        "checked_at": "2026-07-16T10:04:13.270742Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-16T06:14:11.129459Z"
+        "checked_at": "2026-07-16T10:04:16.594599Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -522,6 +522,53 @@
         "model": "claude-haiku-4-5",
         "confidence_notes": "開始時刻の詳細時間が記載されていないため00:00として記載。日比谷は舞台挨拶付きのため既に完売、他劇場はチケット発売中との情報のみで販売時間は記載されていない。",
         "raw_text_hash": "sha256:1d3d7b4329c4e8930769409c724e5e890e0393b23aee0871647acee9da807f82"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1784177459",
+      "title": "『桃源暗鬼』～日光・華厳の滝編～先行上映会",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784177459",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-16T10:03:05.376439Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "ユナイテッド・シネマ アクアシティお台場",
+          "venue_address": "〒135-0091 東京都港区台場1-7-1 アクアシティお台場 内",
+          "starts_at": "2026-09-19T12:30:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "ユナイテッド・シネマ アクアシティお台場",
+          "venue_address": "〒135-0091 東京都港区台場1-7-1 アクアシティお台場 内",
+          "starts_at": "2026-09-19T14:50:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-07-16T12:00:00+09:00",
+        "presale_closes_at": "2026-08-16T23:59:00+09:00",
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
+        "availability_status": null,
+        "checked_at": "2026-07-16T10:04:18.568618Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "",
+        "raw_text_hash": "sha256:3500a402a672f92d8af2fb3e6640b5e62f7a303e2bce34db92514fc3505c9ab0"
       },
       "publish_status": {
         "rss": true,
