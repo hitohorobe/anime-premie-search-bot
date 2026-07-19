@@ -160,6 +160,11 @@ def run_collect(*, config: Config | None = None, dry_run: bool = False, max_page
                 logger.exception("Failed to fetch article %s from %s", ref.id, source.site_name)
                 continue
 
+            if article is None:
+                logger.debug("Article %s from %s has no body keywords, skipping", ref.id, source.site_name)
+                repository.mark_seen(f"{source.site_name}-{ref.id}")
+                continue
+
             event = extract_event(article, client=llm_client, model=config.llm_model)
             if event is None:
                 continue

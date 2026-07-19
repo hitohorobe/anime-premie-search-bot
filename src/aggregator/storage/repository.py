@@ -26,7 +26,16 @@ class EventRepository:
         )
 
     def known_ids(self) -> set[str]:
-        return {event.id for event in self._db.events}
+        return {event.id for event in self._db.events} | set(self._db.seen_article_ids)
+
+    def mark_seen(self, article_id: str) -> None:
+        """本文キーワード不一致で棄却した記事IDを記録する。
+
+        毎回の実行で同じ記事を再取得しないようにする。
+        save() の呼び出しは呼び出し元の責務。
+        """
+        if article_id not in self._db.seen_article_ids:
+            self._db.seen_article_ids.append(article_id)
 
     def get(self, event_id: str) -> Event | None:
         return next((e for e in self._db.events if e.id == event_id), None)

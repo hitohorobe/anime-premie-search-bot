@@ -24,8 +24,23 @@ ARTICLE_URL_RE = re.compile(r"/news/details\.php\?id=(\d+)")
 USER_AGENT = "Mozilla/5.0 (compatible; anime-premiere-aggregator/0.1; +https://github.com/)"
 DEFAULT_MAX_PAGES = 30
 
-# Headings/labels that indicate a screening-event announcement worth keeping.
-EVENT_KEYWORDS = ("先行上映", "先行配信", "舞台挨拶")
+# 記事本文に対してマッチするキーワード（一覧ページのタイトルではない）。
+# 本文はすでに記事コンテンツ要素に絞り込まれているため、「イベント」のような広義の語も
+# タイトルマッチでは誤検知が多すぎるが、本文マッチであれば許容できる。
+BODY_KEYWORDS = (
+    "先行上映",
+    "先行配信",
+    "舞台挨拶",
+    "試写会",
+    "上映会",
+    "完成披露",
+    "先行視聴",
+    "講演会",
+    "トークショー",
+    "イベント",
+    "復活上映",
+    "ファンミーティング",
+)
 
 
 class AnimatetimesScraper(SourceScraper):
@@ -54,10 +69,10 @@ class AnimatetimesScraper(SourceScraper):
                     continue
                 article_id = match.group(1)
                 page_article_ids.add(article_id)
-                if article_id in seen:
+                if article_id in seen or article_id in known_ids:
                     continue
                 title = anchor.get_text(strip=True)
-                if not title or not any(keyword in title for keyword in EVENT_KEYWORDS):
+                if not title:
                     continue
                 seen.add(article_id)
                 page_refs.append(
@@ -69,16 +84,15 @@ class AnimatetimesScraper(SourceScraper):
                 )
 
             if not page_article_ids:
-                break  # ran past the last page
+                break  # 最終ページを超えた
 
             yield from page_refs
 
             if page_article_ids <= known_ids:
-                # Every article on this page is already known — older pages
-                # are even further in the past, so stop paginating.
+                # このページの記事がすべて既知 — それより古いページも不要なので停止。
                 break
 
-    def fetch_article(self, ref: ArticleRef) -> RawArticle:
+    def fetch_article(self, ref: ArticleRef) -> RawArticle | None:
         response = self._client.get(ref.url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "lxml")
@@ -93,6 +107,9 @@ class AnimatetimesScraper(SourceScraper):
             or soup.body
         )
         text = container.get_text("\n", strip=True) if container else soup.get_text("\n", strip=True)
+
+        if not any(keyword in text for keyword in BODY_KEYWORDS):
+            return None
 
         title_tag = soup.find("h1")
         title = title_tag.get_text(strip=True) if title_tag else ref.title

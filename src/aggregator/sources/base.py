@@ -48,5 +48,9 @@ class SourceScraper(ABC):
         """
 
     @abstractmethod
-    def fetch_article(self, ref: ArticleRef) -> RawArticle:
-        """Fetch and clean one article's body text."""
+    def fetch_article(self, ref: ArticleRef) -> RawArticle | None:
+        """記事本文を取得・クリーニングして返す。
+
+        本文にイベント関連キーワードが含まれない場合は None を返し、
+        LLM抽出をスキップするよう呼び出し元に伝える。
+        """

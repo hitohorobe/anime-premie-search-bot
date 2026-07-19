@@ -92,4 +92,7 @@ class Event(BaseModel):
 
 class EventDatabase(BaseModel):
     events: list[Event] = Field(default_factory=list)
+    # 本文キーワード不一致で棄却した記事のID（例: "animatetimes-3333333333"）。
+    # known_ids() に含めることで list_articles() のスキップと早期停止が正常に機能する。
+    seen_article_ids: list[str] = Field(default_factory=list)
     schema_version: int = 1

@@ -1,6 +1,7 @@
 from pathlib import Path
 
-from aggregator.sources.animatetimes import AnimatetimesScraper
+from aggregator.sources.animatetimes import BODY_KEYWORDS, AnimatetimesScraper
+from aggregator.sources.base import ArticleRef
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
@@ -44,12 +45,13 @@ def _scraper_with_fixtures(*, max_pages: int = 10) -> AnimatetimesScraper:
     return AnimatetimesScraper(client=client, max_pages=max_pages)  # type: ignore[arg-type]
 
 
-def test_list_articles_only_returns_event_like_titles():
+def test_list_articles_returns_all_article_ids():
+    """list_articles() yields all articles regardless of title keywords."""
     scraper = _scraper_with_fixtures()
     refs = list(scraper.list_articles())
 
     ids = {ref.id for ref in refs}
-    assert ids == {"1111111111", "2222222222"}  # the goods-roundup article is excluded
+    assert ids == {"1111111111", "2222222222", "3333333333"}
 
 
 def test_list_articles_deduplicates_by_id():
@@ -60,10 +62,8 @@ def test_list_articles_deduplicates_by_id():
 
 def test_list_articles_stops_once_page_is_empty():
     scraper = _scraper_with_fixtures(max_pages=10)
-    # page 2 onward is the empty fixture, so list_articles must not loop
-    # max_pages times — it should stop right after page 1.
     refs = list(scraper.list_articles())
-    assert {ref.id for ref in refs} == {"1111111111", "2222222222"}
+    assert {ref.id for ref in refs} == {"1111111111", "2222222222", "3333333333"}
 
 
 def test_list_articles_continues_to_next_page_when_new_articles_remain():
@@ -81,7 +81,7 @@ def test_list_articles_continues_to_next_page_when_new_articles_remain():
 
     refs = list(scraper.list_articles())
 
-    assert {ref.id for ref in refs} == {"1111111111", "2222222222", "4444444444", "5555555555"}
+    assert {ref.id for ref in refs} == {"1111111111", "2222222222", "3333333333", "4444444444", "5555555555"}
 
 
 def test_list_articles_stops_pagination_once_page_is_fully_known():
@@ -95,11 +95,28 @@ def test_list_articles_stops_pagination_once_page_is_fully_known():
     )
     scraper = AnimatetimesScraper(client=client)  # type: ignore[arg-type]
 
-    # Every id on page 1 (including the non-event one) is already known, so
-    # the scraper should stop before ever requesting page 2.
+    # All ids on page 1 are already known — page 2 must not be requested.
     refs = list(scraper.list_articles(known_ids={"1111111111", "2222222222", "3333333333"}))
 
-    assert {ref.id for ref in refs} == {"1111111111", "2222222222"}
+    assert refs == []
+
+
+def test_list_articles_skips_known_ids():
+    """Known IDs are excluded from yielded refs but still count for early-stop."""
+    listing_html = (FIXTURES / "animatetimes_listing.html").read_text(encoding="utf-8")
+    client = _FakeClient({"anime/?p=1": listing_html})
+    scraper = AnimatetimesScraper(client=client, max_pages=1)  # type: ignore[arg-type]
+
+    refs = list(scraper.list_articles(known_ids={"1111111111"}))
+
+    ids = {ref.id for ref in refs}
+    assert "1111111111" not in ids
+    assert ids == {"2222222222", "3333333333"}
+
+
+def test_body_keywords_contains_expected_terms():
+    for term in ("先行上映", "舞台挨拶", "試写会", "イベント", "ファンミーティング", "復活上映", "トークショー"):
+        assert term in BODY_KEYWORDS
 
 
 def test_fetch_article_extracts_title_and_body_text():
@@ -108,6 +125,7 @@ def test_fetch_article_extracts_title_and_body_text():
 
     article = scraper.fetch_article(ref)
 
+    assert article is not None
     assert article.id == "1111111111"
     assert article.source_site == "animatetimes"
     assert "第13話先行上映会" in article.title
@@ -115,3 +133,22 @@ def test_fetch_article_extracts_title_and_body_text():
     assert "予約サイト" in article.text
     assert "header noise" not in article.text
     assert "footer noise" not in article.text
+
+
+def test_fetch_article_returns_none_when_body_has_no_keywords():
+    no_keyword_html = """
+    <html><body>
+      <nav>nav noise</nav>
+      <article>グッズ情報: Tシャツ・マグカップ・ポスター等の発売が決定しました。</article>
+      <footer>footer noise</footer>
+    </body></html>
+    """
+    client = _FakeClient({"details.php?id=9999999999": no_keyword_html})
+    scraper = AnimatetimesScraper(client=client, max_pages=1)  # type: ignore[arg-type]
+
+    ref = ArticleRef(
+        id="9999999999",
+        url="https://www.animatetimes.com/news/details.php?id=9999999999",
+        title="グッズ情報まとめ",
+    )
+    assert scraper.fetch_article(ref) is None
