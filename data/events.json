@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-19T17:58:10.440418Z"
+        "checked_at": "2026-07-19T18:51:03.942844Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-19T17:58:14.954558Z"
+        "checked_at": "2026-07-19T18:51:06.129404Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -671,7 +671,7 @@
         "general_closes_at": "2027-04-23T17:00:00+09:00",
         "ticket_url": "https://www.youtube.com/@saikyojumpchannel",
         "availability_status": null,
-        "checked_at": "2026-07-19T17:58:17.414483Z"
+        "checked_at": "2026-07-19T18:51:08.803416Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -796,7 +796,7 @@
         "general_closes_at": "2026-08-30T21:00:00+09:00",
         "ticket_url": "https://www.animatetimes.com/news/details.php?id=1783395641",
         "availability_status": "available",
-        "checked_at": "2026-07-19T17:58:41.516675Z"
+        "checked_at": "2026-07-19T18:51:34.358379Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -835,7 +835,7 @@
         "general_closes_at": "2026-08-07T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/digimon-beatbreak/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-19T17:58:44.627462Z"
+        "checked_at": "2026-07-19T18:51:38.489620Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1156,12 +1156,137 @@
         "general_closes_at": "2026-07-19T23:59:00+09:00",
         "ticket_url": "https://lycoris-recoil.com/event/4th/",
         "availability_status": "closed",
-        "checked_at": "2026-07-19T17:59:08.869241Z"
+        "checked_at": "2026-07-19T18:52:02.282429Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
         "confidence_notes": "イベント会場の具体的な施設名・住所は当選通知にて案内予定のため記載不可。ドアオープン時間は当選通知にて案内予定。終了時刻は記事に記載なし。配信のみで会場招待は抽選制。",
         "raw_text_hash": "sha256:90c78393f286657721e89963d875d7f91395a6ba9a5ef73edcb07c67954d6410"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1784012074",
+      "title": "『魔入りました！入間くん』と埼玉西武ライオンズのコラボイベント",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784012074",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T18:44:56.272337Z",
+      "sessions": [
+        {
+          "location_label": "埼玉",
+          "venue_name": "ベルーナドーム",
+          "venue_address": "埼玉県所沢市上山口2135",
+          "starts_at": "2026-08-19T18:00:00+09:00",
+          "doors_open_at": "2026-08-19T16:00:00+09:00",
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://lions-ticket.rakuten.co.jp/",
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "イベント終了時刻が記事に記載されていない",
+        "raw_text_hash": "sha256:ec7d60847ceabd0f9c0a0ac11b4da7500517045d6c43ee322f0135998f75fde3"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1782976136",
+      "title": "『神の雫』スペシャルイベント開催決定",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1782976136",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T18:48:55.096815Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "ホテルニューオータニ 芙蓉の間",
+          "venue_address": "東京都千代田区紀尾井町4-1",
+          "starts_at": "2027-04-24T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-09-16T00:00:00+09:00",
+        "presale_closes_at": "2027-01-19T23:59:00+09:00",
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://canime.jp/help/ticket/",
+        "availability_status": null,
+        "checked_at": "2026-07-19T18:52:05.349594Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "イベントの開始時刻と終了時刻が記事に明記されていない。先行販売は申込受付期間で、当選後に支払手続がある仕組みのため、一般販売の有無と日時は不明。",
+        "raw_text_hash": "sha256:b429b3bf80cda7f0c9e02c8ac391e83d8eb558c7f9f825ffedb486784fa263b7"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1782707312",
+      "title": "「ダイヤのA actⅡ -SS- The Talk & Live」",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1782707312",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T18:50:22.251822Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "ベルサール高田馬場",
+          "venue_address": null,
+          "starts_at": "2026-09-26T13:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "ベルサール高田馬場",
+          "venue_address": null,
+          "starts_at": "2026-09-26T17:30:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-06-13T12:00:00+09:00",
+        "presale_closes_at": "2026-08-09T23:59:00+09:00",
+        "general_opens_at": "2026-09-05T12:00:00+09:00",
+        "general_closes_at": null,
+        "ticket_url": "https://t-dv.com/diaaceact2-ss-thetalklive",
+        "availability_status": "not_yet_open",
+        "checked_at": "2026-07-19T18:52:08.870915Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "チケット販売スケジュールは2段階の抽選先行と一般販売のため、presale_closes_atは二次抽選終了日時とした。一般販売の終了日時は記事に記載されていない。会場住所は記載されていない。",
+        "raw_text_hash": "sha256:9fd4ec2af66fa75ab820dfb75fb3012a511c3d9e09314e65aaceb375da2e7296"
       },
       "publish_status": {
         "rss": true,
