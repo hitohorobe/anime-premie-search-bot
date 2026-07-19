@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-19T06:27:35.043626Z"
+        "checked_at": "2026-07-19T09:48:49.237757Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-19T06:27:37.092727Z"
+        "checked_at": "2026-07-19T09:48:51.963717Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
