@@ -1500,6 +1500,84 @@
         "gcal_event_ids": {}
       },
       "is_report": false
+    },
+    {
+      "id": "animatetimes-1784101605",
+      "title": "『仮面ライダーマイス』制作発表イベント",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784101605",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T20:41:38.859330Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "SUMMER FES LIVEアリーナ（六本木ヒルズアリーナ）",
+          "venue_address": "東京都港区六本木6-10-1 六本木ヒルズ",
+          "starts_at": "2026-08-04T11:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "イベントは入場無料。優先入場にはTTFC会員抽選または優先券付「サマチケ」購入が必要。終了時刻は記事に記載されていない。",
+        "raw_text_hash": "sha256:9ec883c9ae0eb75bdbced8ba40123e78a020e4b87ffe75f6239b5744575531d7"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1782440287",
+      "title": "『天幕のジャードゥーガル』原作・トマトスープ先生インタビュー",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1782440287",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T20:45:38.261951Z",
+      "sessions": [
+        {
+          "location_label": "",
+          "venue_name": null,
+          "venue_address": null,
+          "starts_at": null,
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "記事中に「世界最速上映会で3話まで通して拝見した」という記述があり、先行上映会が存在することが確認できます。しかし、具体的な開催日時、会場、チケット情報などの詳細は記事に記載されていません。",
+        "raw_text_hash": "sha256:3a032dc9e2dec5c28e4b51b784028780ba8c6b9b67a00f67a127ad27d47f5d33"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
     }
   ],
   "seen_article_ids": [
