@@ -1,72 +1,67 @@
 # anime-premie-search-bot
 
-アニメの先行上映会・先行配信イベント情報を収集し、RSS / 静的サイト（GitHub Pages） / X / Bluesky / Google カレンダーへ配信するアグリゲーターです。
+アニメの先行上映会・先行配信イベント情報を収集し、RSS、静的サイト（GitHub Pages）、X、Bluesky、Googleカレンダーへ配信する自動収集ツール。
 
-- 情報源: アニメイトタイムズ（`src/aggregator/sources/animatetimes.py`、RSSが無いためスクレイピング + LLM抽出）
-- 実行: 2つのGitHub Actionsワークフローに分かれている
-  - 収集パイプライン（`.github/workflows/run.yml`、2時間ごとのcron）: スクレイピング・LLM抽出・チケットページ再チェック・RSS/静的サイト生成・Googleカレンダー更新
-  - SNS投稿パイプライン（`.github/workflows/publish-sns.yml`）: 収集パイプライン完了後に`workflow_run`で自動的に起動し、X/Blueskyへの投稿のみ行う
-- データ保存: `data/events.json` をGitで管理（重複投稿防止・チャネル別投稿済み状態を追跡）。両パイプラインがこのファイルを読み書きするが、SNS投稿は収集完了後にのみ走るため競合しない
+## 環境構築
 
-詳細な設計は `/home/super/.claude/plans/sns-bot-rss-google-streamed-allen.md`（プランファイル）を参照してください。
-
-## ローカルでの開発
+必要なもの: Python 3.11+、uv
 
 ```bash
 uv sync
-cp .env.example .env   # .envにANTHROPIC_API_KEYを記入する（後述）
-uv run pytest
-uv run aggregator-run --dry-run          # スクレイピング+抽出のみ確認（投稿/保存なし）
-uv run aggregator-run                    # 収集パイプライン実行（data/events.json保存 + public/ビルド + RSS/サイト/カレンダーへ公開）
-uv run aggregator-publish-sns --dry-run  # SNS投稿対象の確認のみ（投稿/保存なし）
-uv run aggregator-publish-sns            # SNS投稿パイプライン実行（data/events.jsonの既存イベントのみ対象、X/Blueskyへ投稿）
+cp .env.example .env  # ANTHROPIC_API_KEY を記入
 ```
 
-`aggregator-publish-sns` はスクレイピング・LLM抽出を行わず、`aggregator-run` が保存した `data/events.json` の内容だけを対象にX/Blueskyへ投稿します。本番では `aggregator-run` の完了後に自動的に呼ばれる想定です（後述のGitHub Actions参照）。
-
-`.env` ファイル（リポジトリ直下、gitignore済み）にAPIキーを書いておけば `uv run aggregator-run` 実行時に自動で読み込まれます（`python-dotenv`使用）。シェルで直接 `export ANTHROPIC_API_KEY=...` する方法でも構いません。
-
-ローカルで「ページ収集とビルドだけ試したい」場合は、`ANTHROPIC_API_KEY` だけ `.env` に設定すれば十分です（X/Bluesky/Google Calendarの認証情報は未設定なら自動でスキップされ、RSS/静的サイト生成は常に実行されます）。`--dry-run` を付けると `data/events.json` の保存や各チャネルへの投稿も行わず、スクレイピングとLLM抽出の結果だけを確認できます。`--dry-run` を外すと `public/index.html` ・ `public/feed.xml` の実ビルドと `data/events.json` への保存まで行われます。
-
-animatetimesの一覧ページ（`/anime/?p=N`）は既知の記事IDしか見つからなくなった時点で自動的に巡回を止めますが、安全のため最大ページ数の上限（デフォルト30ページ）があります。`--max-pages N` オプション（または `ANIMATETIMES_MAX_PAGES` 環境変数）で上限を変更できます。
+## コマンド
 
 ```bash
-uv run aggregator-run --dry-run --max-pages 3
+uv run pytest
+uv run aggregator-run --dry-run          # 収集: 確認のみ（保存・投稿なし）
+uv run aggregator-run                    # 収集: 本実行
+uv run aggregator-publish-sns --dry-run  # SNS投稿: 確認のみ
+uv run aggregator-publish-sns            # SNS投稿: 本実行
 ```
 
-## 必要な環境変数 / GitHub Secrets
+最大巡回ページ数は `--max-pages N`（または `ANIMATETIMES_MAX_PAGES` 環境変数）で変更できる（デフォルト30）。
 
-| 変数名 | 用途 | 使われるワークフロー |
-|---|---|---|
-| `ANTHROPIC_API_KEY` | 記事本文・チケットページからのイベント情報抽出（Claude API） | `run.yml`（収集） |
-| `GOOGLE_SERVICE_ACCOUNT_JSON` | Google Calendar 連携用サービスアカウントの認証情報（JSON文字列をそのまま） | `run.yml`（収集） |
-| `GCAL_CALENDAR_ID` | イベントを登録する先のGoogleカレンダーID | `run.yml`（収集） |
-| `X_API_KEY` / `X_API_SECRET` / `X_ACCESS_TOKEN` / `X_ACCESS_TOKEN_SECRET` | X (Twitter) への投稿 | `publish-sns.yml` |
-| `BLUESKY_HANDLE` / `BLUESKY_APP_PASSWORD` | Bluesky への投稿 | `publish-sns.yml` |
+## 環境変数
 
-未設定のチャネルはパイプライン側で自動的にスキップされます（RSSと静的サイト生成のみ必須）。
+GitHub Secretsに登録する。未設定のチャネルは自動スキップ。`ANTHROPIC_API_KEY` だけ設定すればRSSと静的サイト生成は動く。
 
-## Google カレンダーの初期セットアップ（一度だけ手動で実施）
+収集ワークフロー（`run.yml`）:
+- `ANTHROPIC_API_KEY` — Claude APIキー（記事・チケットページからの情報抽出）
+- `GOOGLE_SERVICE_ACCOUNT_JSON` — サービスアカウントのJSONキー文字列
+- `GCAL_CALENDAR_ID` — 登録先のGoogleカレンダーID
 
-1. Google Cloud Consoleで新しいプロジェクト（または既存プロジェクト）にサービスアカウントを作成し、JSONキーをダウンロードする
-2. Google Calendarで新規カレンダーを作成する（例: 「アニメ先行上映・先行配信情報」）
-3. そのカレンダーの「設定と共有」から、サービスアカウントのメールアドレスを「予定の変更権限」で共有に追加する
-4. カレンダーを公開設定にし、公開URL（embed / iCalリンク）を控える
-5. カレンダー設定画面の「カレンダーの統合」からカレンダーIDを取得する
-6. ダウンロードしたJSONキーの内容を `GOOGLE_SERVICE_ACCOUNT_JSON`、カレンダーIDを `GCAL_CALENDAR_ID` としてGitHub Secretsに登録する
+SNS投稿ワークフロー（`publish-sns.yml`）:
+- `X_API_KEY`、`X_API_SECRET`、`X_ACCESS_TOKEN`、`X_ACCESS_TOKEN_SECRET`
+- `BLUESKY_HANDLE`、`BLUESKY_APP_PASSWORD`
 
-## 静的サイト（ページネーション・期間絞り込み）
+## Googleカレンダーの初期設定
 
-`public/index.html` は収集した全イベントを削除せずに保持し続けます（古いイベントもサイト上に残ります）。表示側では:
+一度だけ手動で実施。
 
-- 開催が近い順（未終了イベント）→ 開催が新しい順（終了済みイベント）に並びます。
-- 全イベントをJSONとして`index.html`内に埋め込み、`public/site.js`（クライアントサイドJavaScript）がページネーション（1ページ20件）と開催日でのfrom/to絞り込みを行います。JavaScriptを無効にしている場合は一覧が表示されません（その場合は`public/feed.xml`のRSSフィードを利用してください）。
-- イベントの表示項目を増やす場合は、Jinja2テンプレート（`templates/site/index.html`）だけでなく`templates/site/site.js`のレンダリング処理も合わせて更新する必要があります。
+1. Google Cloud Consoleでサービスアカウントを作成し、JSONキーをダウンロード
+2. Google Calendarで専用カレンダーを新規作成
+3. カレンダーの「設定と共有」でサービスアカウントのメールを「予定の変更権限」で追加
+4. カレンダーIDを取得（「カレンダーの統合」から確認できる）
+5. JSONキー文字列を `GOOGLE_SERVICE_ACCOUNT_JSON`、カレンダーIDを `GCAL_CALENDAR_ID` としてGitHub Secretsに登録
 
 ## GitHub Pages
 
-`.github/workflows/run.yml` が `public/` ディレクトリをビルドし、GitHub Pagesにデプロイします。リポジトリの Settings > Pages で Source を「GitHub Actions」に設定してください。
+Settings > Pages で Source を「GitHub Actions」に設定する。
 
-## ワークフローの関係
+## 仕様
 
-`run.yml`（収集）が完了すると、`publish-sns.yml` が `workflow_run` トリガーで自動的に起動し、`data/events.json` の中身を見てX/Blueskyへの未投稿イベントだけを投稿します。収集が失敗した回（`conclusion != success`）はSNS投稿をスキップします。`publish-sns.yml` は `workflow_dispatch` でも手動実行できます。
+### ワークフロー
+
+収集（`run.yml`、2時間ごとcron）はスクレイピング・LLM抽出・チケットページ確認・RSS生成・サイト生成・Googleカレンダー更新を行う。SNS投稿（`publish-sns.yml`）は収集完了後に自動起動し、収集失敗時はスキップ。`workflow_dispatch` で手動実行も可。
+
+`data/events.json` をGitで管理し、重複投稿防止とチャネル別の投稿済み状態を追跡する。
+
+### サイト
+
+- 全イベントを保持し続ける
+- 表示順: 未終了イベントを開催が近い順、終了済みをその後ろに開催が新しい順
+- 1ページ20件のページネーション、開催日でのfrom/to絞り込み
+- JavaScript無効では一覧が表示されない（RSSフィードを利用）
+- 表示項目を追加する場合は `templates/site/index.html` と `templates/site/site.js` の両方を更新
