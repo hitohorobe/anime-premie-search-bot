@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-19T18:51:03.942844Z"
+        "checked_at": "2026-07-19T19:09:30.803020Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-19T18:51:06.129404Z"
+        "checked_at": "2026-07-19T19:09:32.739326Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -671,7 +671,7 @@
         "general_closes_at": "2027-04-23T17:00:00+09:00",
         "ticket_url": "https://www.youtube.com/@saikyojumpchannel",
         "availability_status": null,
-        "checked_at": "2026-07-19T18:51:08.803416Z"
+        "checked_at": "2026-07-19T19:09:35.109854Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -796,7 +796,7 @@
         "general_closes_at": "2026-08-30T21:00:00+09:00",
         "ticket_url": "https://www.animatetimes.com/news/details.php?id=1783395641",
         "availability_status": "available",
-        "checked_at": "2026-07-19T18:51:34.358379Z"
+        "checked_at": "2026-07-19T19:09:59.773000Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -835,7 +835,7 @@
         "general_closes_at": "2026-08-07T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/digimon-beatbreak/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-19T18:51:38.489620Z"
+        "checked_at": "2026-07-19T19:10:04.230901Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1156,7 +1156,7 @@
         "general_closes_at": "2026-07-19T23:59:00+09:00",
         "ticket_url": "https://lycoris-recoil.com/event/4th/",
         "availability_status": "closed",
-        "checked_at": "2026-07-19T18:52:02.282429Z"
+        "checked_at": "2026-07-19T19:10:27.261310Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1234,7 +1234,7 @@
         "general_closes_at": null,
         "ticket_url": "https://canime.jp/help/ticket/",
         "availability_status": null,
-        "checked_at": "2026-07-19T18:52:05.349594Z"
+        "checked_at": "2026-07-19T19:10:29.984822Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1281,12 +1281,216 @@
         "general_closes_at": null,
         "ticket_url": "https://t-dv.com/diaaceact2-ss-thetalklive",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-19T18:52:08.870915Z"
+        "checked_at": "2026-07-19T19:10:33.808106Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
         "confidence_notes": "チケット販売スケジュールは2段階の抽選先行と一般販売のため、presale_closes_atは二次抽選終了日時とした。一般販売の終了日時は記事に記載されていない。会場住所は記載されていない。",
         "raw_text_hash": "sha256:9fd4ec2af66fa75ab820dfb75fb3012a511c3d9e09314e65aaceb375da2e7296"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1784184000",
+      "title": "『きみが死ぬまで恋をしたい』OPテーマ「Amore」発売記念ABEMA特番",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784184000",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T18:59:09.403342Z",
+      "sessions": [
+        {
+          "location_label": "オンライン",
+          "venue_name": "ABEMA アニメLIVEチャンネル",
+          "venue_address": null,
+          "starts_at": "2026-07-21T19:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": "2026-07-21T20:00:00+09:00"
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://abema.tv/channels/anime-live/slots/8a5o2NGkCPgNij",
+        "availability_status": null,
+        "checked_at": "2026-07-19T19:10:35.861048Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "",
+        "raw_text_hash": "sha256:39f6f73040c57bd8692de47ac72793d63c442d815ad9639f52705677005b0e0f"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1784080481",
+      "title": "『バンドリ！ ゆめ∞みた』TVアニメ放送記念フリーライブ「新宿着陸計画」",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784080481",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T18:59:36.528598Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "東急歌舞伎町タワーステージ",
+          "venue_address": null,
+          "starts_at": "2026-08-22T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "Zepp Shinjuku (TOKYO)",
+          "venue_address": null,
+          "starts_at": "2026-09-25T00:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "フリーライブの詳細情報（開場時間、終了時間、チケット情報）は記事に記載されていない",
+        "raw_text_hash": "sha256:60e6e7cd0c70da823d85980a5b3be4f732c75c00239b653843ade3c2d0ddd16b"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1784079584",
+      "title": "『Dr.STONE』フィナーレイベント「STONE FES. 2026」",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784079584",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T18:59:49.268446Z",
+      "sessions": [
+        {
+          "location_label": "横浜",
+          "venue_name": "横浜BUNTAI",
+          "venue_address": null,
+          "starts_at": "2026-10-10T13:00:00+09:00",
+          "doors_open_at": "2026-10-10T12:00:00+09:00",
+          "ends_at": null
+        },
+        {
+          "location_label": "横浜",
+          "venue_name": "横浜BUNTAI",
+          "venue_address": null,
+          "starts_at": "2026-10-10T18:30:00+09:00",
+          "doors_open_at": "2026-10-10T17:30:00+09:00",
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "初回生産限定盤にはチケット優先販売申込券が封入されるとの記載があるが、一般販売の開始日時や販売サイトのURLは記事に記載されていない。",
+        "raw_text_hash": "sha256:100e88bad7751e02d477235a8662dd7793beff167e78d16c654fadb4eb56ad83"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1783993871",
+      "title": "『ちびゴジラの逆襲』×東京メトロ コラボ「3Dサウンドアドベンチャー」",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1783993871",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-19T19:00:29.780461Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "銀座駅",
+          "venue_address": null,
+          "starts_at": "2026-07-17T10:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": "2026-08-31T23:59:00+09:00"
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "溜池山王駅・国会議事堂前駅",
+          "venue_address": null,
+          "starts_at": "2026-07-17T10:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": "2026-08-31T23:59:00+09:00"
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "明治神宮前〈原宿〉駅",
+          "venue_address": null,
+          "starts_at": "2026-07-17T10:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": "2026-08-31T23:59:00+09:00"
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "池袋駅",
+          "venue_address": null,
+          "starts_at": "2026-07-17T10:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": "2026-08-31T23:59:00+09:00"
+        },
+        {
+          "location_label": "東京",
+          "venue_name": "新宿三丁目駅",
+          "venue_address": null,
+          "starts_at": "2026-07-17T10:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": "2026-08-31T23:59:00+09:00"
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://3dsound-tokyometro.jp/chibigodzilla/",
+        "availability_status": "available",
+        "checked_at": "2026-07-19T19:10:38.418991Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "イベントは東京メトロ対象駅での位置情報型体験企画のため、従来的な先行上映会とは異なるが、スクリーニングイベント告知として分類。各駅での参加方法や特典情報は明記されているが、具体的な会場建物の所在地は駅名のみの記載。",
+        "raw_text_hash": "sha256:09c063d5e333c74edef975d8be1f400052b2b6b447ec2e0120d4bd8c88692c70"
       },
       "publish_status": {
         "rss": true,
@@ -1755,7 +1959,8 @@
     "animatetimes-1782348019",
     "animatetimes-1782457165",
     "animatetimes-1782459694",
-    "animatetimes-1782460798"
+    "animatetimes-1782460798",
+    "animatetimes-1782796439"
   ],
   "schema_version": 1
 }
