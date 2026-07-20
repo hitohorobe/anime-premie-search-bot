@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-19T19:09:30.803020Z"
+        "checked_at": "2026-07-20T19:48:29.761270Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-19T19:09:32.739326Z"
+        "checked_at": "2026-07-20T19:48:32.259690Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -671,7 +671,7 @@
         "general_closes_at": "2027-04-23T17:00:00+09:00",
         "ticket_url": "https://www.youtube.com/@saikyojumpchannel",
         "availability_status": null,
-        "checked_at": "2026-07-19T19:09:35.109854Z"
+        "checked_at": "2026-07-20T19:48:34.670750Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -796,7 +796,7 @@
         "general_closes_at": "2026-08-30T21:00:00+09:00",
         "ticket_url": "https://www.animatetimes.com/news/details.php?id=1783395641",
         "availability_status": "available",
-        "checked_at": "2026-07-19T19:09:59.773000Z"
+        "checked_at": "2026-07-20T19:48:58.956690Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -835,7 +835,7 @@
         "general_closes_at": "2026-08-07T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/digimon-beatbreak/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-19T19:10:04.230901Z"
+        "checked_at": "2026-07-20T19:49:03.391331Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1156,7 +1156,7 @@
         "general_closes_at": "2026-07-19T23:59:00+09:00",
         "ticket_url": "https://lycoris-recoil.com/event/4th/",
         "availability_status": "closed",
-        "checked_at": "2026-07-19T19:10:27.261310Z"
+        "checked_at": "2026-07-20T19:49:26.519319Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1234,7 +1234,7 @@
         "general_closes_at": null,
         "ticket_url": "https://canime.jp/help/ticket/",
         "availability_status": null,
-        "checked_at": "2026-07-19T19:10:29.984822Z"
+        "checked_at": "2026-07-20T19:49:29.968483Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1281,7 +1281,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t-dv.com/diaaceact2-ss-thetalklive",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-19T19:10:33.808106Z"
+        "checked_at": "2026-07-20T19:49:33.111752Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1320,7 +1320,7 @@
         "general_closes_at": null,
         "ticket_url": "https://abema.tv/channels/anime-live/slots/8a5o2NGkCPgNij",
         "availability_status": null,
-        "checked_at": "2026-07-19T19:10:35.861048Z"
+        "checked_at": "2026-07-20T19:49:35.394332Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1485,7 +1485,7 @@
         "general_closes_at": null,
         "ticket_url": "https://3dsound-tokyometro.jp/chibigodzilla/",
         "availability_status": "available",
-        "checked_at": "2026-07-19T19:10:38.418991Z"
+        "checked_at": "2026-07-20T19:49:38.779596Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1569,6 +1569,45 @@
         "model": "claude-haiku-4-5",
         "confidence_notes": "記事中に「世界最速上映会で3話まで通して拝見した」という記述があり、先行上映会が存在することが確認できます。しかし、具体的な開催日時、会場、チケット情報などの詳細は記事に記載されていません。",
         "raw_text_hash": "sha256:3a032dc9e2dec5c28e4b51b784028780ba8c6b9b67a00f67a127ad27d47f5d33"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1784521197",
+      "title": "『ワールド イズ ダンシング』観世能楽堂×コラボイベント",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784521197",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-20T19:37:33.667247Z",
+      "sessions": [
+        {
+          "location_label": "東京",
+          "venue_name": "GINZA SIX 地下３階　観世能楽堂",
+          "venue_address": null,
+          "starts_at": "2026-07-26T12:00:00+09:00",
+          "doors_open_at": null,
+          "ends_at": "2026-07-30T18:00:00+09:00"
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-07-03T10:00:00+09:00",
+        "presale_closes_at": null,
+        "general_opens_at": "2026-07-09T10:00:00+09:00",
+        "general_closes_at": null,
+        "ticket_url": "https://kanze.net/publics/index/824/",
+        "availability_status": null,
+        "checked_at": "2026-07-20T19:49:43.618298Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "イベントの開始時刻は12:00、終了時刻は18:00として記載。複数日開催（7月26日～30日）だが、1つのセッションとしてまとめた。具体的なチケット販売開始日時の記載がないため、presale/general開始・終了時刻はnull。",
+        "raw_text_hash": "sha256:c739b51b8f2d2d7aebd13007ce6d7d3fdbbd3e63e6cc2e120361aaa3ee2cc7a4"
       },
       "publish_status": {
         "rss": true,
