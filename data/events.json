@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-20T19:48:29.761270Z"
+        "checked_at": "2026-07-20T21:15:23.217708Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-20T19:48:32.259690Z"
+        "checked_at": "2026-07-20T21:15:25.425509Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -671,7 +671,7 @@
         "general_closes_at": "2027-04-23T17:00:00+09:00",
         "ticket_url": "https://www.youtube.com/@saikyojumpchannel",
         "availability_status": null,
-        "checked_at": "2026-07-20T19:48:34.670750Z"
+        "checked_at": "2026-07-20T21:15:27.604661Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -796,7 +796,7 @@
         "general_closes_at": "2026-08-30T21:00:00+09:00",
         "ticket_url": "https://www.animatetimes.com/news/details.php?id=1783395641",
         "availability_status": "available",
-        "checked_at": "2026-07-20T19:48:58.956690Z"
+        "checked_at": "2026-07-20T21:15:50.944107Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -835,7 +835,7 @@
         "general_closes_at": "2026-08-07T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/digimon-beatbreak/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-20T19:49:03.391331Z"
+        "checked_at": "2026-07-20T21:15:54.996113Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1156,7 +1156,7 @@
         "general_closes_at": "2026-07-19T23:59:00+09:00",
         "ticket_url": "https://lycoris-recoil.com/event/4th/",
         "availability_status": "closed",
-        "checked_at": "2026-07-20T19:49:26.519319Z"
+        "checked_at": "2026-07-20T21:16:21.178213Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1234,7 +1234,7 @@
         "general_closes_at": null,
         "ticket_url": "https://canime.jp/help/ticket/",
         "availability_status": null,
-        "checked_at": "2026-07-20T19:49:29.968483Z"
+        "checked_at": "2026-07-20T21:16:24.560737Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1281,7 +1281,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t-dv.com/diaaceact2-ss-thetalklive",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-20T19:49:33.111752Z"
+        "checked_at": "2026-07-20T21:16:28.621835Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1320,7 +1320,7 @@
         "general_closes_at": null,
         "ticket_url": "https://abema.tv/channels/anime-live/slots/8a5o2NGkCPgNij",
         "availability_status": null,
-        "checked_at": "2026-07-20T19:49:35.394332Z"
+        "checked_at": "2026-07-20T21:16:30.439631Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1485,7 +1485,7 @@
         "general_closes_at": null,
         "ticket_url": "https://3dsound-tokyometro.jp/chibigodzilla/",
         "availability_status": "available",
-        "checked_at": "2026-07-20T19:49:38.779596Z"
+        "checked_at": "2026-07-20T21:16:33.070057Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1602,12 +1602,42 @@
         "general_closes_at": null,
         "ticket_url": "https://kanze.net/publics/index/824/",
         "availability_status": null,
-        "checked_at": "2026-07-20T19:49:43.618298Z"
+        "checked_at": "2026-07-20T21:16:36.712505Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
         "confidence_notes": "イベントの開始時刻は12:00、終了時刻は18:00として記載。複数日開催（7月26日～30日）だが、1つのセッションとしてまとめた。具体的なチケット販売開始日時の記載がないため、presale/general開始・終了時刻はnull。",
         "raw_text_hash": "sha256:c739b51b8f2d2d7aebd13007ce6d7d3fdbbd3e63e6cc2e120361aaa3ee2cc7a4"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1782968716",
+      "title": "スーパーの裏でヤニ吸うふたり ABEMA限定先行配信版",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1782968716",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-20T21:12:57.886553Z",
+      "sessions": [],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "ABEMA限定先行配信版が無料配信中とのみ記載されており、配信開始日時や終了日時の具体的な情報が記事に明記されていません。このため、sessions配列を空にしtargetの具体的なスケジュール情報は抽出できません。",
+        "raw_text_hash": "sha256:306ca4eb8b3aa0ab0821e95fd328facf23900294aee89068196eef4d3d627147"
       },
       "publish_status": {
         "rss": true,
