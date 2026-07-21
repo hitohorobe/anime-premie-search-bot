@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-20T23:03:17.459807Z"
+        "checked_at": "2026-07-21T02:14:47.504660Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-20T23:03:19.474534Z"
+        "checked_at": "2026-07-21T02:14:49.362871Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -671,7 +671,7 @@
         "general_closes_at": "2027-04-23T17:00:00+09:00",
         "ticket_url": "https://www.youtube.com/@saikyojumpchannel",
         "availability_status": null,
-        "checked_at": "2026-07-20T23:03:22.250284Z"
+        "checked_at": "2026-07-21T02:14:51.971234Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -796,7 +796,7 @@
         "general_closes_at": "2026-08-30T21:00:00+09:00",
         "ticket_url": "https://www.animatetimes.com/news/details.php?id=1783395641",
         "availability_status": "available",
-        "checked_at": "2026-07-20T23:03:46.927086Z"
+        "checked_at": "2026-07-21T02:15:16.380668Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -835,7 +835,7 @@
         "general_closes_at": "2026-08-07T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/digimon-beatbreak/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-20T23:03:51.726027Z"
+        "checked_at": "2026-07-21T02:15:21.475569Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1156,7 +1156,7 @@
         "general_closes_at": "2026-07-19T23:59:00+09:00",
         "ticket_url": "https://lycoris-recoil.com/event/4th/",
         "availability_status": "closed",
-        "checked_at": "2026-07-20T23:04:15.160528Z"
+        "checked_at": "2026-07-21T02:15:44.800381Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1234,7 +1234,7 @@
         "general_closes_at": null,
         "ticket_url": "https://canime.jp/help/ticket/",
         "availability_status": null,
-        "checked_at": "2026-07-20T23:04:18.591739Z"
+        "checked_at": "2026-07-21T02:15:47.797878Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1281,7 +1281,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t-dv.com/diaaceact2-ss-thetalklive",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-20T23:04:22.955142Z"
+        "checked_at": "2026-07-21T02:15:52.718743Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1320,7 +1320,7 @@
         "general_closes_at": null,
         "ticket_url": "https://abema.tv/channels/anime-live/slots/8a5o2NGkCPgNij",
         "availability_status": null,
-        "checked_at": "2026-07-20T23:04:24.863101Z"
+        "checked_at": "2026-07-21T02:15:54.577954Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1482,10 +1482,10 @@
         "presale_opens_at": null,
         "presale_closes_at": null,
         "general_opens_at": null,
-        "general_closes_at": null,
+        "general_closes_at": "2026-08-31T23:59:59+09:00",
         "ticket_url": "https://3dsound-tokyometro.jp/chibigodzilla/",
         "availability_status": "available",
-        "checked_at": "2026-07-20T23:04:27.012577Z"
+        "checked_at": "2026-07-21T02:15:57.344873Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1602,7 +1602,7 @@
         "general_closes_at": null,
         "ticket_url": "https://kanze.net/publics/index/824/",
         "availability_status": null,
-        "checked_at": "2026-07-20T23:04:30.380564Z"
+        "checked_at": "2026-07-21T02:16:01.560333Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1668,6 +1668,36 @@
         "model": "claude-haiku-4-5",
         "confidence_notes": "先行配信は7月8日22:00よりdアニメストア、AnimeFesta、アニメタイムズにて最速先行配信開始と記載されている。これは先行配信イベントに該当する。ただし会場情報（sessions）はオンライン配信のため不要。チケットURLや事前受付情報は記事に記載されていないためnull。",
         "raw_text_hash": "sha256:d68d25879e0d5787ae19aab456f0b5c6fa6f3f09e2513df99cab05159d52f70d"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1782731372",
+      "title": "鉄鍋のジャン！第1話先行配信",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1782731372",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-21T02:13:58.905221Z",
+      "sessions": [],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "記事は第1話の先行場面カットとあらすじの公開を告知していますが、先行上映会・先行配信イベントの具体的な日時や予約情報は記載されていません。記載されているのはテレ東系列での放送開始日時（2026年7月5日17:30）と、夕方6時以降の各配信サービスでの先行配信という情報のみです。",
+        "raw_text_hash": "sha256:99bb494cb66ebf2be64e02042954b7618eca459d3793b053c0c1a0a228b410c8"
       },
       "publish_status": {
         "rss": true,
