@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-21T19:24:35.160364Z"
+        "checked_at": "2026-07-21T21:11:04.255758Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-21T19:24:37.323913Z"
+        "checked_at": "2026-07-21T21:11:06.089737Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -671,7 +671,7 @@
         "general_closes_at": "2027-04-23T17:00:00+09:00",
         "ticket_url": "https://www.youtube.com/@saikyojumpchannel",
         "availability_status": null,
-        "checked_at": "2026-07-21T19:24:40.313566Z"
+        "checked_at": "2026-07-21T21:11:09.943140Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -796,7 +796,7 @@
         "general_closes_at": "2026-08-30T21:00:00+09:00",
         "ticket_url": "https://www.animatetimes.com/news/details.php?id=1783395641",
         "availability_status": "available",
-        "checked_at": "2026-07-21T19:25:03.230449Z"
+        "checked_at": "2026-07-21T21:11:34.672678Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -835,7 +835,7 @@
         "general_closes_at": "2026-08-07T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/digimon-beatbreak/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-21T19:25:08.172498Z"
+        "checked_at": "2026-07-21T21:11:38.568919Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1156,7 +1156,7 @@
         "general_closes_at": "2026-07-19T23:59:00+09:00",
         "ticket_url": "https://lycoris-recoil.com/event/4th/",
         "availability_status": "closed",
-        "checked_at": "2026-07-21T19:25:31.949634Z"
+        "checked_at": "2026-07-21T21:12:02.159329Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1234,7 +1234,7 @@
         "general_closes_at": null,
         "ticket_url": "https://canime.jp/help/ticket/",
         "availability_status": null,
-        "checked_at": "2026-07-21T19:25:35.655640Z"
+        "checked_at": "2026-07-21T21:12:04.784165Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1281,7 +1281,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t-dv.com/diaaceact2-ss-thetalklive",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-21T19:25:38.756421Z"
+        "checked_at": "2026-07-21T21:12:07.727943Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1485,7 +1485,7 @@
         "general_closes_at": "2026-08-31T23:59:59+09:00",
         "ticket_url": "https://3dsound-tokyometro.jp/chibigodzilla/",
         "availability_status": "available",
-        "checked_at": "2026-07-21T19:25:41.208840Z"
+        "checked_at": "2026-07-21T21:12:10.106069Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1602,7 +1602,7 @@
         "general_closes_at": null,
         "ticket_url": "https://kanze.net/publics/index/824/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-21T19:25:44.652992Z"
+        "checked_at": "2026-07-21T21:12:13.420321Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1745,6 +1745,66 @@
         "model": "claude-haiku-4-5",
         "confidence_notes": "登壇キャストなどの詳細は後日発表となっているため、チケット販売情報は記事に記載されていない。開催日時のみ確定情報。",
         "raw_text_hash": "sha256:5fed8835d9d3e06a6c165c0d20933c930cebccd1429770190b460e6519f59ac0"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1783671057",
+      "title": "アニメ『イジらないで、長瀞さん』放送5周年記念 全24話無料一挙配信",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1783671057",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-21T21:05:16.076125Z",
+      "sessions": [],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": "2026-07-17T20:00:00+09:00",
+        "general_closes_at": "2026-09-07T23:59:00+09:00",
+        "ticket_url": "https://www.youtube.com/c/KingAmusementCreative",
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "記事内に「2026年にTVアニメ放送開始から5周年を迎える」と明記されているため、配信スケジュールの年は2026年と判断。配信はYouTubeチャンネルでの無料配信であり、チケット購入は不要。複数の配信期間があるが（第1期と第2期で異なる期間）、最終的な終了日は9月7日。",
+        "raw_text_hash": "sha256:9164a9a364f80b5852e57a6f704ddccceed3dbd8270223d4e40f066cc77c9795"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1783065125",
+      "title": "アニメ『最強出涸らし皇子の暗躍帝位争い』先行配信",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1783065125",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-21T21:07:48.917192Z",
+      "sessions": [],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": "2026-07-06T21:30:00+09:00",
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "記事は先行配信イベントの告知ですが、配信開始時刻のみ記載されており、先行配信チケットの販売情報は記載されていません。一般配信はイベントではなく通常の配信のため除外しました。",
+        "raw_text_hash": "sha256:6347da51779acc734cd64e8f141d248d64c97fe515c662dad284b73d0c23a193"
       },
       "publish_status": {
         "rss": true,
