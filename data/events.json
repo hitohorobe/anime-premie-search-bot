@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-22T06:32:49.983673Z"
+        "checked_at": "2026-07-22T10:29:03.891982Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-22T06:32:52.237153Z"
+        "checked_at": "2026-07-22T10:29:06.082931Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -671,7 +671,7 @@
         "general_closes_at": "2027-04-23T17:00:00+09:00",
         "ticket_url": "https://www.youtube.com/@saikyojumpchannel",
         "availability_status": null,
-        "checked_at": "2026-07-22T06:32:54.754967Z"
+        "checked_at": "2026-07-22T10:29:08.742663Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -796,7 +796,7 @@
         "general_closes_at": "2026-08-30T21:00:00+09:00",
         "ticket_url": "https://www.animatetimes.com/news/details.php?id=1783395641",
         "availability_status": "available",
-        "checked_at": "2026-07-22T06:33:18.286172Z"
+        "checked_at": "2026-07-22T10:29:43.471022Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -834,8 +834,8 @@
         "general_opens_at": "2026-08-01T10:00:00+09:00",
         "general_closes_at": "2026-08-07T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/digimon-beatbreak/",
-        "availability_status": "available",
-        "checked_at": "2026-07-22T06:33:23.663928Z"
+        "availability_status": "not_yet_open",
+        "checked_at": "2026-07-22T10:29:48.588059Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1156,7 +1156,7 @@
         "general_closes_at": "2026-07-19T23:59:00+09:00",
         "ticket_url": "https://lycoris-recoil.com/event/4th/",
         "availability_status": "closed",
-        "checked_at": "2026-07-22T06:33:47.124502Z"
+        "checked_at": "2026-07-22T10:30:11.709024Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1234,7 +1234,7 @@
         "general_closes_at": null,
         "ticket_url": "https://canime.jp/help/ticket/",
         "availability_status": null,
-        "checked_at": "2026-07-22T06:33:50.739630Z"
+        "checked_at": "2026-07-22T10:30:15.773148Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1281,7 +1281,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t-dv.com/diaaceact2-ss-thetalklive",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-22T06:33:55.285089Z"
+        "checked_at": "2026-07-22T10:30:20.688372Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1485,7 +1485,7 @@
         "general_closes_at": "2026-08-31T23:59:59+09:00",
         "ticket_url": "https://3dsound-tokyometro.jp/chibigodzilla/",
         "availability_status": "available",
-        "checked_at": "2026-07-22T06:33:57.605613Z"
+        "checked_at": "2026-07-22T10:30:23.460386Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1602,7 +1602,7 @@
         "general_closes_at": null,
         "ticket_url": "https://kanze.net/publics/index/824/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-22T06:34:01.090415Z"
+        "checked_at": "2026-07-22T10:30:27.499001Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1805,6 +1805,83 @@
         "model": "claude-haiku-4-5",
         "confidence_notes": "記事は先行配信イベントの告知ですが、配信開始時刻のみ記載されており、先行配信チケットの販売情報は記載されていません。一般配信はイベントではなく通常の配信のため除外しました。",
         "raw_text_hash": "sha256:6347da51779acc734cd64e8f141d248d64c97fe515c662dad284b73d0c23a193"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1784616309",
+      "title": "『BLEACH 千年血戦篇-禍進譚-』第1話～第3話 劇場先行上映会",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784616309",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-22T10:20:54.381383Z",
+      "sessions": [],
+      "reservation": {
+        "presale_opens_at": null,
+        "presale_closes_at": null,
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": null,
+        "availability_status": null,
+        "checked_at": null
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "記事はインタビュー記事であり、劇場先行上映会が予定されていることが言及されていますが、開催日時、会場、チケット販売情報などの具体的なイベント詳細は本文に記載されていません。",
+        "raw_text_hash": "sha256:005c5d8b5122a213297e20e8f356173a44901d196c76c838e90271333c964f0a"
+      },
+      "publish_status": {
+        "rss": true,
+        "site": true,
+        "twitter": false,
+        "bluesky": false,
+        "gcal_event_ids": {}
+      },
+      "is_report": false
+    },
+    {
+      "id": "animatetimes-1784448324",
+      "title": "「名探偵プリキュア！LIVE2026」長谷川育美さん出演決定",
+      "source_url": "https://www.animatetimes.com/news/details.php?id=1784448324",
+      "source_site": "animatetimes",
+      "fetched_at": "2026-07-22T10:21:25.507718Z",
+      "sessions": [
+        {
+          "location_label": "横浜",
+          "venue_name": "パシフィコ横浜 国立大ホール",
+          "venue_address": "〒220-0012　神奈川県横浜市西区みなとみらい１丁目１−１",
+          "starts_at": "2026-10-03T13:00:00+09:00",
+          "doors_open_at": "2026-10-03T12:00:00+09:00",
+          "ends_at": null
+        },
+        {
+          "location_label": "横浜",
+          "venue_name": "パシフィコ横浜 国立大ホール",
+          "venue_address": "〒220-0012　神奈川県横浜市西区みなとみらい１丁目１−１",
+          "starts_at": "2026-10-03T18:00:00+09:00",
+          "doors_open_at": "2026-10-03T17:00:00+09:00",
+          "ends_at": null
+        }
+      ],
+      "reservation": {
+        "presale_opens_at": "2026-05-03T12:00:00+09:00",
+        "presale_closes_at": "2026-05-10T23:59:00+09:00",
+        "general_opens_at": null,
+        "general_closes_at": null,
+        "ticket_url": "https://www.marv.jp/special/precure_live/",
+        "availability_status": null,
+        "checked_at": "2026-07-22T10:30:31.507790Z"
+      },
+      "extraction": {
+        "model": "claude-haiku-4-5",
+        "confidence_notes": "一般販売の開始・終了日時が記載されていない。先行抽選のみの情報。",
+        "raw_text_hash": "sha256:b75dcd2b92f43a4a82da008f9e929627cca865f524a936288b7764f1d43a6d1a"
       },
       "publish_status": {
         "rss": true,
@@ -2313,7 +2390,17 @@
     "animatetimes-1784618293",
     "animatetimes-1784636868",
     "animatetimes-1783584440",
-    "animatetimes-1784191522"
+    "animatetimes-1784191522",
+    "animatetimes-1784643430",
+    "animatetimes-1784686323",
+    "animatetimes-1784711476",
+    "animatetimes-1784702492",
+    "animatetimes-1784694057",
+    "animatetimes-1784696342",
+    "animatetimes-1784701140",
+    "animatetimes-1784649956",
+    "animatetimes-1784690274",
+    "animatetimes-1784610414"
   ],
   "schema_version": 1
 }
