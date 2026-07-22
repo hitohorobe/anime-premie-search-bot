@@ -453,7 +453,7 @@
         "general_closes_at": null,
         "ticket_url": "https://www.netflix.com/title/82116553",
         "availability_status": null,
-        "checked_at": "2026-07-22T02:13:05.147937Z"
+        "checked_at": "2026-07-22T06:32:49.983673Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -563,7 +563,7 @@
         "general_closes_at": null,
         "ticket_url": "https://ticket.ponycanyon.co.jp/pc/389",
         "availability_status": null,
-        "checked_at": "2026-07-22T02:13:06.960214Z"
+        "checked_at": "2026-07-22T06:32:52.237153Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -671,7 +671,7 @@
         "general_closes_at": "2027-04-23T17:00:00+09:00",
         "ticket_url": "https://www.youtube.com/@saikyojumpchannel",
         "availability_status": null,
-        "checked_at": "2026-07-22T02:13:09.647150Z"
+        "checked_at": "2026-07-22T06:32:54.754967Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -796,7 +796,7 @@
         "general_closes_at": "2026-08-30T21:00:00+09:00",
         "ticket_url": "https://www.animatetimes.com/news/details.php?id=1783395641",
         "availability_status": "available",
-        "checked_at": "2026-07-22T02:13:34.269444Z"
+        "checked_at": "2026-07-22T06:33:18.286172Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -835,7 +835,7 @@
         "general_closes_at": "2026-08-07T16:00:00+09:00",
         "ticket_url": "https://w.pia.jp/t/digimon-beatbreak/",
         "availability_status": "available",
-        "checked_at": "2026-07-22T02:13:38.878279Z"
+        "checked_at": "2026-07-22T06:33:23.663928Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1156,7 +1156,7 @@
         "general_closes_at": "2026-07-19T23:59:00+09:00",
         "ticket_url": "https://lycoris-recoil.com/event/4th/",
         "availability_status": "closed",
-        "checked_at": "2026-07-22T02:14:01.823616Z"
+        "checked_at": "2026-07-22T06:33:47.124502Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1234,7 +1234,7 @@
         "general_closes_at": null,
         "ticket_url": "https://canime.jp/help/ticket/",
         "availability_status": null,
-        "checked_at": "2026-07-22T02:14:05.561148Z"
+        "checked_at": "2026-07-22T06:33:50.739630Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1281,7 +1281,7 @@
         "general_closes_at": null,
         "ticket_url": "https://t-dv.com/diaaceact2-ss-thetalklive",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-22T02:14:09.219234Z"
+        "checked_at": "2026-07-22T06:33:55.285089Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1485,7 +1485,7 @@
         "general_closes_at": "2026-08-31T23:59:59+09:00",
         "ticket_url": "https://3dsound-tokyometro.jp/chibigodzilla/",
         "availability_status": "available",
-        "checked_at": "2026-07-22T02:14:11.611022Z"
+        "checked_at": "2026-07-22T06:33:57.605613Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -1602,7 +1602,7 @@
         "general_closes_at": null,
         "ticket_url": "https://kanze.net/publics/index/824/",
         "availability_status": "not_yet_open",
-        "checked_at": "2026-07-22T02:14:14.532007Z"
+        "checked_at": "2026-07-22T06:34:01.090415Z"
       },
       "extraction": {
         "model": "claude-haiku-4-5",
@@ -2306,7 +2306,14 @@
     "animatetimes-1784616396",
     "animatetimes-1784615594",
     "animatetimes-1655345898",
-    "animatetimes-1784254333"
+    "animatetimes-1784254333",
+    "animatetimes-1784686617",
+    "animatetimes-1784682866",
+    "animatetimes-1784687201",
+    "animatetimes-1784618293",
+    "animatetimes-1784636868",
+    "animatetimes-1783584440",
+    "animatetimes-1784191522"
   ],
   "schema_version": 1
 }
